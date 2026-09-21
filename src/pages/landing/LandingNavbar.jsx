@@ -6,6 +6,10 @@ function scrollToId(id) {
   if (element) {
     element.scrollIntoView({ behavior: 'smooth' })
   }
+  const toggle = document.getElementById('siteNavToggle')
+  if (toggle) {
+    toggle.checked = false
+  }
 }
 
 const ABOUT_LINKS = [
